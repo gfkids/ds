@@ -1,0 +1,41 @@
+@mixin mobile
+  @media (max-width: 480px)
+    @content
+
+@mixin tab
+  @media (min-width: 480px) and (max-width: 840px)
+    @content
+
+@mixin desk
+  @media (min-width: 841px)
+    @content
+
+@mixin mobile-tab
+  @media (max-width: 840px)
+    @content
+
+@mixin tab-desk
+  @media (min-width: 480px)
+    @content
+
+@mixin container( $mobile-container: $col-11, $tab-container: $col-11, $desk-container: $col-10, $max-width: 1100px)
+  width: $mobile-container
+  margin: 0 auto
+  @include tab
+    width: $tab-container
+  @include desk
+    width: $desk-container
+    max-width: $max-width
+
+@mixin grid ($justify: space-between )
+  display: flex
+  flex-wrap: wrap
+  margin: 0 auto
+  justify-content: $justify
+
+@mixin font-size-adaptive( $font-mobile, $font-tab, $font-desk )
+  font-size: $font-mobile
+  @include tab
+    font-size: $font-tab
+  @include desk
+    font-size: $font-desk

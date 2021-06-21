@@ -1,0 +1,38 @@
+.side
+  background-color: $color-light
+  color: $color-dark
+  border-bottom: 1px solid $color-main
+.side__logout
+  background: url('./../../img/exit.svg') 30px center no-repeat
+  background-size: auto 60%
+  span
+    padding-left: 30px
+.side-icon
+  background: url('./../../img/menu.svg') 0 0 no-repeat
+  background-size: cover
+  &:hover
+    opacity: 0.7
+.side__show
+  left: 0
+  opacity: 1
+.side__link
+  display: block
+  font-size: $font-size-h5
+  cursor: pointer
+  list-style: none
+  padding: 10px 0 10px 30px
+  &:hover
+    color: $color-main
+.overlay
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 50px
+  left: 0
+  visibility: hidden
+  opacity: 0
+  background-color: rgba(0, 0, 0, 0.63)
+  transition: 500ms ease-in-out
+.overlay__show
+  visibility: visible
+  opacity: 0.5

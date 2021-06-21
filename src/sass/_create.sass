@@ -1,0 +1,71 @@
+.create
+  @include container($col-11, $col-11, $col-10, $max-width: 900px)
+  margin-top: 100px
+.create__id
+  &--exist
+    color: #ff5252
+
+.create__outlay-resource,
+.create__outlay-resource--final,
+.create__outlay-resource--base
+  display: none
+.create__outlay-resource--show
+  display: block
+.create__uploads
+  display: flex
+  justify-content: space-around
+  @include mobile-tab
+    flex-wrap: wrap
+.create__upload
+  width: $col-6
+  @include mobile-tab
+    width: $col-10
+  p
+    text-align: center
+    height: 65px
+    margin-bottom: 0
+    @include mobile-tab
+      height: auto
+.create__img
+  width: 100%
+  height: auto
+.create__pickers
+  display: flex
+  justify-content: space-around
+  margin-bottom: 40px
+  @include mobile-tab
+    flex-wrap: wrap
+.create__outlay-item
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+.create__outlay-cell
+  label
+    font-size: $font-size-h6
+  &--name
+    width: $col-12
+  &--quantity
+    width: $col-3
+    margin-right: 10px
+  &--price
+    width: $col-4
+  &--sum
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    width: $col-4
+    text-align: center
+    span
+      padding: 2px 0
+.create__outlay--add
+  display: flex
+  margin: auto
+.outlay__message
+  padding: 0 10px
+.create__currency
+  display: block
+  margin-top: 40px
+input#projectId::placeholder
+  font-size: 0.9*$font-size-h6
+  color: lighten($color-base, 30%)

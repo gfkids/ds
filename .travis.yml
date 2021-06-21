@@ -1,0 +1,30 @@
+language: node_js
+
+node_js:
+  - "5.6.0"
+
+script: 
+  - npm run build
+deploy:
+  provider: pages
+  skip_cleanup: true
+
+github_token: $GITHUB_TOKEN 
+local_dir: dist
+
+notifications:
+  email: false
+  
+env:
+  global:
+    - CXX=g++-4.8
+
+
+before_install:
+  - npm install -g node-gyp
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-5

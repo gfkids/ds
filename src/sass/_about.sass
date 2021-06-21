@@ -1,0 +1,66 @@
+.about
+  border-bottom: 1px dashed $color-main
+  margin-bottom: 70px
+  @include mobile
+    margin-top: 0
+  p
+    font-size: $font-size-h6
+    margin: auto
+.about__container
+  margin: 0 auto
+.about__row--title
+  font-weight: 400
+  h2
+    width: 100%
+    text-align: center
+.about__row
+  max-width: 1440px
+  display: inline-block
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 10px auto
+.about__row-img
+  display: inline-block
+  height: 200px
+  overflow: hidden
+  width: $col-6
+  &--1
+    background: url("../../img/basket2.jpg") no-repeat 0 center
+    background-size: cover
+  &--2
+    background: url("../../img/yard.jpg") no-repeat 0 70%
+    background-size: cover
+  &--3
+    background: url("../../img/01.jpg") no-repeat 0 center
+    background-size: cover
+  &--4
+    background: url("../../img/6.jpg") no-repeat 0 center
+    background-size: cover
+  @include mobile
+    &--1
+      width: $col-12
+      background: url("../../img/yard.jpg") no-repeat center 70%
+      background-size: cover
+      height: 100px
+    &--2
+      display: none
+    &--3
+      width: $col-12
+      height: 100px
+    &--4
+      display: none
+.about__row-desc
+  @include container( $col-12, $col-11, $col-11, $max-width: 900px )
+  background-color: #fff
+  border: 1px solid lighten($color-main, 20%)
+  border-top: 5px solid $color-main
+  padding: 10px 10px 30px 10px
+  transform: translateY(20px)
+  h5
+    width: 100%
+    margin-bottom: 1rem
+    color: $color-dark
+  p
+    text-indent: 20px
+    margin: 10px auto

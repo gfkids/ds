@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="yandex-verification" content="7afa2f97335fa622" />
+    <meta name="Description" content="Сервис оформления коллективных проектов и прозрачного сбора средств."/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="yandex-verification" content="3e1bf56f057abb91" />
+    <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,700|Material+Icons' rel="stylesheet"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <title>Donate Systems</title>
+    <style type="text/css">
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: hsla(0, 0%, 18%, 1);
+      background-color: #fff;
+      box-sizing: border-box;
+    }
+    .header {
+      display: flex;
+      position: fixed;
+      top: 0;
+      z-index: 6;
+      width: 100%;
+      margin: auto;
+      height: 50px;
+      background-color: #fff;
+      border-bottom: 1px solid #1B5E20;
+    }
+    .header__top {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 5px;
+      display: flex;
+      justify-content: space-between;
+      z-index: 6;
+      background-color: #fff;
+    }
+    .header__top-nav {
+      width: 70%;
+    }
+    @media (max-width: 840px){
+      .header__top-nav {
+          display: none;
+        }
+      }
+    .header__top-nav ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      padding-left: 0;
+    }
+    .header__top-link {
+      justify-content: center;
+      border-bottom: 1px solid #1B5E20;
+      color: #1B5E20;
+      text-align: center;
+      margin: auto;
+      cursor: pointer;
+      list-style: none;
+      font-size: 16px;
+    }
+    .header__top-link:hover {
+      color: #4CAF50;
+    }
+    .header__lang {
+      display: block;
+      font-size: 12px;
+      width: 120px;
+      color: #1B5E20;
+    }
+    .header__lang span {
+      font-size: 12px;
+      color: #4CAF50;
+    }
+    .header__lang select {
+      width: 80px;
+      border-bottom: 1px solid #4CAF50;
+      background-color: rgb(233, 245, 234);
+      margin-bottom: -10px;
+      cursor: pointer;
+      font-size: 16px;
+     }
+     .side {
+        position: absolute;
+        top: 50px;
+        left: -260px;
+        width: 250px;
+        z-index: 1;
+        transition: 500ms ease-in-out;
+        opacity: 0;
+        padding: 15px 0;
+     }
+     .side-logo {
+       display: flex;
+     }
+     .side-icon {
+        width: 30px;
+        height: 30px;
+        margin: auto 5px auto 0;
+        opacity: 1;
+     }
+     /*.features {
+        display: flex;
+        background-color: hsl(113, 28%, 33%);
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        color: #fff;
+        margin-top: -40vh;
+        padding: 0;
+        overflow: hidden;
+     }
+      .features picture {
+        min-width: 100%;
+        overflow: hidden;
+      }
+      .features picture img{
+        display: block;
+        min-height: 100vh;
+        width: auto;
+        min-width: 100%;
+        max-width: 1700px;
+      }
+      .features__title {
+        display: block;
+        color: #fff;
+        border-radius: 10px;
+        max-width: 80%;
+        padding: 10px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-transform: none;
+        transform: translateY(50vh);
+      }
+      @media (max-width: 840px){
+        .features__title {
+          font-size: 1.2rem;
+        }
+      }*/
+     .logo {
+        display: flex;
+        position: relative;
+        height: 100%;
+        margin-left: 10px;
+      }
+
+      .logo::after {
+        position: absolute;
+        content: "";
+        top: 10px;
+        right: -10px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #1B5E20;
+      }
+      .logo:hover::after {
+        background-color: #4CAF50
+      }
+      .logo__link {
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        display: block;
+        font-style: italic;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin: auto;
+        align-self: center;
+        cursor: pointer;
+        color: #1B5E20;
+      }
+  </style>
+  <link href=/css/materialIcons.ebde8367.css rel=preload as=style>
+  <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+
+       ym(53910325, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true,
+            trackHash:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/53910325" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '316543152852672');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=316543152852672&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+  </head>
+  <body>
+    <!-- Load Facebook SDK for JavaScript -->
+      <!-- <div id="fb-root"></div>
+      <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              xfbml            : true,
+              version          : 'v7.0'
+            });
+          };
+          (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/ru_RU/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script> -->
+            <!-- Your Chat Plugin code -->
+      <!-- <div class="fb-customerchat"
+              attribution=setup_tool
+              page_id="111403973968483"
+        theme_color="#67b868"
+        greeting_dialog_display="fade"
+        greeting_dialog_delay="30"
+        logged_in_greeting="Добрый день. Здесь Вы можете написать комментарий или вопрос."
+        logged_out_greeting="Добрый день. Для связи авторизуйтесь в Facebook ">
+      </div> -->
+    <noscript>
+      <strong>We're sorry but test doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+  </body>
+</html>

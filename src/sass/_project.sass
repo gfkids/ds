@@ -1,0 +1,205 @@
+.project
+  padding-bottom: 40px
+  margin-top: 40px
+  display: flex
+.project__images
+  @include container ($col-12, $col-12, $col-12, $max-width: 1500px)
+  display: flex
+  justify-content: space-between
+  margin-bottom: 30px
+  @include mobile-tab
+    flex-wrap: wrap
+.project__image
+  width: $col-6
+  @include mobile-tab
+    width: 100%
+  p
+    text-align: center
+    color: $color-dark
+    text-transform: uppercase
+.project__img
+  height: 250px
+  width: 100%
+  &--before-bench
+    background: url("./img/basket-old-2.jpg") no-repeat center center
+    background-size: cover
+  &--bench
+    background: url("./img/basket2.jpg") no-repeat center 80%
+    background-size: cover
+  @include mobile-tab
+    height: 200px
+.project__outlay
+  @include container ($col-11, $col-11, $col-11, $max-width: 900px)
+  margin-bottom: 90px
+  table
+    text-align: center
+    width: 100%
+    tr
+      font-size: $font-size-h4
+      @include mobile
+        font-size: $font-size-h6
+      &:last-child
+        color: $color-dark
+        font-weight: 700
+    th
+      font-size: $font-size-h6
+      background: $color-main
+      color: #fff
+      height: 60px
+      padding: 0 5px
+      font-weight: 400
+      &::first-child
+        width: $col-4
+    td
+      line-height: $line-height-h3
+      height: 50px
+      text-transform: capitalcase
+      border-bottom: 1px dashed $color-main
+.outlay
+  @include container($col-11, $col-11, $col-11, $max-width: 900px)
+.outlay__row
+  display: flex
+  justify-content: space-between
+  width: 100%
+  flex-wrap: no-wrap
+  align-items: center
+  height: auto
+  // border-bottom: 1px dashed $color-main
+  @include mobile
+    font-size: $font-size-h6
+  span
+    padding:  0 5px
+    flex-grow: 1
+    width: $col-2
+    text-align: center
+    align-items: stretch
+    line-height: $line-height-h3
+    &:first-child
+      width: $col-5
+    &:nth-child(2)
+      width: $col-3
+    &:last-child
+      color: $color-dark
+  &--head
+    display: flex
+    background: $color-main
+    color: #fff
+    height: 70px
+    span
+      line-height: 70px
+      font-size: $font-size-h6
+      border-right: 2px solid #fff
+      &:nth-child(3)
+        line-height: 100%
+        border-right: none
+      &:last-child
+        border-left: 2px solid #fff
+        color: #fff
+  &--btn
+    button
+      // width: 100%
+      padding: 0 10px
+      display: flex
+      margin: auto
+      background-color: $color-main
+      color: #fff
+      &:hover
+        box-sizing: border-box
+        background-color: $color-light
+        color: $color-dark
+    flex-grow: 1
+    &:first-child
+      flex-basis: $col-7
+  &--sum
+    border-bottom: 1px dashed $color-main
+    border-top: 1px dashed $color-main
+    color: $color-dark
+    font-weight: bold
+.outlay-proof
+  display: none
+  background-color: $color-main
+  color: #fff
+  padding-bottom: 10px
+  h5
+    margin: 0
+  p
+    text-align: center
+  span
+    display: block
+    text-align: center
+.outlay-proof--show
+  display: block
+.outlay-proof__contacts
+  width: 100%
+  margin: auto
+.outlay-proof__check
+  display: block
+  margin: auto
+  width: 100%
+  max-width: 300px
+.outlay__photos
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  @include container($col-12, $col-12, $col-12, $max-width: 1700px)
+  margin: 30px auto 50px auto
+  &--container
+    @include container($col-11, $col-11, $col-9, $max-width: 700px)
+    margin: 0 auto
+.outlay__photo--img
+  width: 100%
+  max-width: 100%
+  height: auto
+.outlay__photo
+  width: $col-6
+  margin: auto
+  margin-top: 10px
+  @include mobile
+    width: $col-10
+.v-responsive,
+.v-image,
+.v-responsive__sizer,
+.v-responsive__content
+  display: block
+.project__container
+  align-self: center
+.project__container p
+  position: relative
+  padding: 10px 0px
+  @include mobile-tab
+    padding: 8px
+  background-color: #fff
+  border-radius: 2px
+.project__title
+  @include container( $col-11, $col-11, $col-9, $max-width: 900px )
+  padding: 20px
+  h4
+    text-transform: uppercase
+    margin-bottom: 40px
+  p
+    text-align: center
+    background-color: transparent
+    margin: 0 auto
+    padding: 5px
+.project__image p
+  font-size: $font-size-h6
+  height: 70px
+  background-color: transparent
+  margin: 30px auto 0
+h4.project__title
+  color: $color-main2
+  font-weight: 400
+h2.project__title
+  font-size: $font-size-h1
+  font-weight: 400
+h3.project__title
+  font-weight: 400
+.project__participation
+  @include container ($col-11, $col-11, $col-11, $max-width: 900px)
+  margin-top: 40px
+  p
+    background-color: transparent
+.donor__contact input::placeholder
+  font-size: $font-size-h6
+.outlay__message
+  @include container ($col-11, $col-11, $col-11, $max-width: 900px)

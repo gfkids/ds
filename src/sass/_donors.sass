@@ -1,0 +1,45 @@
+.donors
+  @include container( $col-11, $col-11, $col-11, $max-width: 900px )
+  margin: 50px auto 50px auto
+  h1
+    margin-bottom: 50px
+.donors__block
+  border: 1px dashed $color-main
+  margin-bottom: 20px
+.donors__row
+  display: flex
+  justify-content: center
+  width: 100%
+  padding: 15px 0
+  &--user-page
+    flex-wrap: wrap
+  &--head
+    color: $color-dark
+    font-weight: bold
+  &--got-donations
+    background-color: $color-light
+    color: $color-dark
+    font-weight: bold
+  &--need-donations
+    background-color: $color-light2
+    color: $color-dark2
+    font-weight: bold
+  &--rest-donations
+    background-color: $color-light
+    color: $color-dark
+    font-weight: bold
+.donors__cell
+  display: flex
+  justify-content: center
+  align-items: center
+  width: $col-5
+  @include mobile-tab
+    width: $col-6
+  font-size: $font-size-h5
+  height: 50px
+  text-align: center
+  margin-left: 10px
+  padding: 0 3px
+.donor__usernick
+  color: $color-dark
+  font-size: $font-size-h3
